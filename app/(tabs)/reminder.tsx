@@ -5,7 +5,7 @@ import ParallaxScrollView from '@/components/ParallaxScrollView';
 import {ThemedText} from '@/components/ThemedText';
 import {ThemedView} from '@/components/ThemedView';
 import React, {useState} from "react";
-import {TabBarIcon} from "@/components/navigation/TabBarIcon";
+import {CommonIcon} from "@/components/navigation/CommonIcon";
 
 export default function ReminderScreen() {
 
@@ -55,7 +55,7 @@ export default function ReminderScreen() {
                 </ThemedView>
             </ParallaxScrollView>
             <TouchableOpacity style={styles.addButton}>
-                <TabBarIcon name={'add-circle'} color={'#0a7ea4'} />
+                <CommonIcon name={'add-circle'} color={'#0a7ea4'} />
                 <Text style={styles.addButtonText}>Lời nhắc mới</Text>
             </TouchableOpacity>
         </View>
@@ -73,7 +73,7 @@ const ListReminderItem = ({item, onPress, backgroundColor}: ItemProps) => (
             </ThemedText>
         </ThemedView>
         <TouchableOpacity style={styles.infoIcon}>
-            <TabBarIcon name="information-circle-outline" size={24} color="#888" />
+            <CommonIcon name="information-circle-outline" size={24} color="#888" />
         </TouchableOpacity>
     </ThemedView>
 

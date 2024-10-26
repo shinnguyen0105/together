@@ -1,7 +1,7 @@
 import { Tabs } from 'expo-router';
 import React from 'react';
 
-import { TabBarIcon } from '@/components/navigation/TabBarIcon';
+import { CommonIcon } from '@/components/navigation/CommonIcon';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
 
@@ -19,7 +19,7 @@ export default function TabLayout() {
         options={{
           title: 'Home',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
+            <CommonIcon name={focused ? 'home' : 'home-outline'} color={color} />
           ),
         }}
       />
@@ -28,7 +28,7 @@ export default function TabLayout() {
         options={{
           title: 'Explore',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+            <CommonIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
           ),
         }}
       />
@@ -37,7 +37,7 @@ export default function TabLayout() {
             options={{
                 title: 'Reminder',
                 tabBarIcon: ({ color, focused }) => (
-                    <TabBarIcon name={focused ? 'alert-circle-sharp' : 'alert-circle-outline'} color={color} />
+                    <CommonIcon name={focused ? 'alert-circle-sharp' : 'alert-circle-outline'} color={color} />
                 ),
             }}
         />
