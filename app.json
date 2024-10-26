@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "framming-app",
-    "slug": "framming-app",
+    "name": "together-app",
+    "slug": "together-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
